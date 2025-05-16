@@ -19,7 +19,7 @@ Midnight Requiem is a 2D exploration game featuring atmospheric environments and
 - Ability to activate dialogues by pressing interaction keys.
 
 ## Upcoming features 
--This is a list of features that is being worked and will be avaiable very soon
+- This is a list of features that is being worked and will be avaiable very soon
 - contextual random encouter battle system
 - coordinate based auto dialouge popup
 - player centered camera 
