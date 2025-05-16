@@ -10,7 +10,7 @@ class TerrainTile(pygame.sprite.Sprite):
 class CollisionObject(pygame.sprite.Sprite):
     def __init__(self, pos, size, groups):
         super().__init__(groups)
-        self.image = pygame.Surface(size)
+        self.image = pygame.Surface(size, pygame.SRCALPHA)
         self.image.set_alpha(0)  
         self.rect = self.image.get_rect(topleft=pos)
         self.hitbox = self.rect
@@ -18,8 +18,8 @@ class CollisionObject(pygame.sprite.Sprite):
 class DialogueTrigger(pygame.sprite.Sprite):
     def __init__(self, pos, size, groups, dialogue_key):
         super().__init__(groups)
-        self.image = pygame.Surface(size)
-        self.image.fill((5, 165, 0, 100)) 
+        self.image = pygame.Surface(size, pygame.SRCALPHA)  # Enable per-pixel alpha
+        self.image.fill((0, 0, 0, 0))  # Fully transparent
         self.rect = self.image.get_rect(topleft=pos)
         self.hitbox = self.rect.inflate(-10, -10)
         self.dialogue_key = dialogue_key

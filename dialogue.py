@@ -6,7 +6,6 @@ class DialogueBox:
         self.lines = []
         self.current_line = 0
         
-      
         self.box = pygame.Rect(50, screen_height - 200, screen_width - 100, 150)
         self.font = pygame.font.Font(font_path, font_size)
         self.text_color = (255, 255, 255)
