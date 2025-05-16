@@ -18,8 +18,8 @@ class CollisionObject(pygame.sprite.Sprite):
 class DialogueTrigger(pygame.sprite.Sprite):
     def __init__(self, pos, size, groups, dialogue_key):
         super().__init__(groups)
-        self.image = pygame.Surface(size, pygame.SRCALPHA)  # Enable per-pixel alpha
-        self.image.fill((0, 0, 0, 0))  # Fully transparent
+        self.image = pygame.Surface(size, pygame.SRCALPHA) 
+        self.image.fill((0, 0, 0, 0)) 
         self.rect = self.image.get_rect(topleft=pos)
         self.hitbox = self.rect.inflate(-10, -10)
         self.dialogue_key = dialogue_key
